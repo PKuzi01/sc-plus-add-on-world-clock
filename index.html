@@ -14,48 +14,64 @@
     <title>World Clock</title>
 </head>
 <body>
-    <div class="container">
-        <h1>World Clock</h1>
-        <select id="city" class="city">
-            <option value="">Select a city...</option>
-            <option value="local">My current location</option>
-            <option value="Africa/Johannesburg">Johannesburg</option>
-            <option value="America/Bogota">Bogota</option>
-            <option value="Asia/Manila">Manila</option>
-        </select>
+    <div class="app">
+        <div class="world-clock">
+            <div class="container-fluid">
+                <div class="heading">
+                    <h1>World Clock</h1>
+                </div>
+                <select id="city" class="city">
+                    <option value="">Select a city...</option>
+                    <option value="local">My current location</option>
+                    <option value="Africa/Johannesburg">Johannesburg</option>
+                    <option value="America/Bogota">Bogota</option>
+                    <option value="Asia/Manila">Manila</option>
+                </select>
 
-        <div class="cities-1" id="fr">
-            <div class="place" id="place-1">
-                <h2 class="city" id="fr">Paris</h2>
-                <div class="date">April 6th 2023</div>
+                <div class="cities" id="fr">
+                    <div class="place" id="place-1">
+                        <h2 class="place-name" id="fr">Paris</h2>
+                        <div class="date">April 6th 2023</div>
+                    </div>
+                    <div class="time" id="time">
+                        00:57:07
+                        <small id="am-pm">AM</small>
+                    </div>
+                </div>
+                <div class="cities" id="ny">
+                    <div class="place" id="place-2">
+                        <h2 class="place-name" id="place-name-2">New York</h2>
+                        <div class="date">April 5th 2023</div>
+                    </div>
+                    <div class="time" id="time">
+                        20:57:07
+                        <small id="am-pm">PM</small>
+                    </div>
+                </div>
+                <div class="cities" id="nl">
+                    <div class="place" id="place-3">
+                        <h2 class="place-name" id="nl">Amsterdam</h2>
+                        <div class="date">April 6th 2023</div>
+                    </div>
+                    <div class="time" id="time">
+                        11:57:07
+                        <small id="am-pm">PM</small>
+                    </div>
+                </div>
+                <div class="homepage" id="link">
+                    <a href="index.html">Back to homepage</a>
+                </div>
+                <div class="links">
+                    <footer>
+                        Created by
+                        <a href="http://">Philisizwe Kuzwayo</a>
+                        , is hosted on
+                        <a href="http://">Netlify</a>
+                        , and is 
+                        <a href="http://">open sourced on Github</a>
+                    </footer>
+                </div>
             </div>
-            <div class="time" id="time">
-                00:57:07
-                <small id="am-pm">AM</small>
-            </div>
-        </div>
-        <div class="cities-2" id="ny">
-            <div class="place" id="place-2">
-                <h2 class="place-name-2" id="place-name-2">New York</h2>
-                <div class="date">April 5th 2023</div>
-            </div>
-            <div class="time" id="time">
-                20:57:07
-                <small id="am-pm">PM</small>
-            </div>
-        </div>
-        <div class="cities-2" id="nl">
-            <div class="place" id="place-3">
-                <h2 class="place-name-3" id="nl">Amsterdam</h2>
-                <div class="date">April 6th 2023</div>
-            </div>
-            <div class="time" id="time">
-                11:57:07
-                <small id="am-pm">PM</small>
-            </div>
-        </div>
-        <div class="link" id="link">
-            <a href="index.html">Back to homepage</a>
         </div>
     </div>
 
