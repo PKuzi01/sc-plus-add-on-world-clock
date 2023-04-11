@@ -21,5 +21,19 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000)
 
+function updateCity(event) {
+    let cityTZ = event.target.value;
+    let cityTime = moment(). tz(cityTZ);
+    let city = document.querySelector("#cities")
+    city = `<div class="place" id="jhb">
+        <div>
+            <h2>Johannesburg</h2>
+            <div class="date"></div>
+        </div>
+        
+        <div class="time"></div>
+        </div>`
+}
 
-
+let citySelect = document.querySelector("#city");
+citySelect.addEventListener("change", updateCity)
