@@ -32,6 +32,14 @@ footer {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.place:last-child {
+    border: none;
+}
+
+.date {
+    opacity: 0.7;
+}
+
 .time {
     font-size: 40px;
 }
