@@ -5,6 +5,10 @@ select {
     padding: 10px;
 }
 
+footer {
+    text-align: center;
+}
+
 .container-fluid {
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 10px;
