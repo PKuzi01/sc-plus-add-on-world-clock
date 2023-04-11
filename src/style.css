@@ -1,0 +1,37 @@
+select {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.container-fluid {
+    font-family: 'Source Sans Pro', sans-serif;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.place {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.time {
+    font-size: 40px;
+}
+
+.time .am-pm {
+    font-size: 20px;
+}
