@@ -38,6 +38,9 @@ setInterval(updateTime, 1000)
 
 function updateCity(event) {
     let cityTZ = event.target.value;
+    if (cityTZ === "Current") {
+        cityTZ = moment.tz.guess();
+    }
     let cityName = cityTZ.replace("_", " ").split("/")[1];
     let cityTime = moment(). tz(cityTZ);
     let city = document.querySelector("#cities")
