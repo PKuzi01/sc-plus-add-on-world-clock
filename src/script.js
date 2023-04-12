@@ -7,7 +7,7 @@ function updateTime() {
     let jhbTime2 = moment().tz("Africa/Johannesburg");
 
     jhbDate.innerHTML= jhbTime2.format("MMMM Do YYYY");
-    jhbTime.innerHTML= jhbTime2.format("hh:mm:ss [<small>]A[</small>]");//fix the hTML
+    jhbTime.innerHTML= jhbTime2.format("hh:mm:ss [<small>]A[</small>]");
     }
 
     //ldn
@@ -18,7 +18,18 @@ function updateTime() {
     let ldnTime2 = moment().tz("Europe/London");
 
     ldnDate.innerHTML= ldnTime2.format("MMMM Do YYYY");
-    ldnTime.innerHTML= ldnTime2.format("hh:mm:ss [<small>]A[</small>]"); //fic HTML
+    ldnTime.innerHTML= ldnTime2.format("hh:mm:ss [<small>]A[</small>]"); 
+    }
+
+    //tky
+    let tky = document.querySelector("#tky");
+    if (tky) {
+    let tkyDate = tky.querySelector(".date");
+    let tkyTime = tky.querySelector(".time");
+    let tkyTime2 = moment().tz("Asia/Tokyo");
+
+    tkyDate.innerHTML= tkyTime2.format("MMMM Do YYYY");
+    tkyTime.innerHTML= tkyTime2.format("hh:mm:ss [<small>]A[</small>]"); 
     }
 };
 
@@ -30,14 +41,14 @@ function updateCity(event) {
     let cityName = cityTZ.replace("_", " ").split("/")[1];
     let cityTime = moment(). tz(cityTZ);
     let city = document.querySelector("#cities")
-    city.innerHTML = `<div class="place" id="jhb">
+    city.innerHTML = `<div class="place">
         <div>
             <h2>${cityName}</h2> 
             <div class="date">${cityTime.format("MMMM Do YYYY")}</div>
         </div>
         
         <div class="time">${cityTime.format("hh:mm:ss")} <small>${cityTime.format("A")}</small></div>
-        </div>`
+        </div>`;
 }
 
 let citySelect = document.querySelector("#city");
