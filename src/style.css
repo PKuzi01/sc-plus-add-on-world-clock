@@ -3,19 +3,23 @@ select {
     width: 100%;
     border-radius: 5px;
     padding: 10px;
+    background: #d6c1a8;
 }
 
 footer {
     text-align: center;
+    color: #2e2113;
 }
 
 .container-fluid {
     font-family: 'Source Sans Pro', sans-serif;
     border-radius: 10px;
-    box-shadow: 10px 10px 15px;
+    box-shadow: 10px 10px 15px #c7b198;
     max-width: 700px;
     margin: 20px auto;
     padding: 20px;
+    background: #dfd3c3; 
+    color: #241505; 
 }
 
 .heading {
@@ -46,6 +50,7 @@ footer {
 
 .link{
     text-decoration: none;
+    color:#61503d
 }
 
 .homepage {
