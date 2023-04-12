@@ -1,5 +1,6 @@
 ### SheCodes Plus Add On Final Project: World Clock
 #### Authored by Philisizwe Kuzwayo
+#### Date completed: 12.04.2023
 ---
 
 ##### Duration:
