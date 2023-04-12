@@ -44,6 +44,10 @@ footer {
     font-size: 40px;
 }
 
+.link{
+    text-decoration: none;
+}
+
 .homepage {
    margin: 10px auto;
 }
