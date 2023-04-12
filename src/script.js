@@ -33,9 +33,6 @@ function updateTime() {
     }
 };
 
-updateTime();
-setInterval(updateTime, 1000)
-
 function updateCity(event) {
     let cityTZ = event.target.value;
     if (cityTZ === "Current") {
@@ -56,7 +53,10 @@ function updateCity(event) {
             <a class="link" href="index.html">Back to homepage</a>
         </div>
         `;
-}
+};
+
+updateTime();
+setInterval(updateTime, 1000);
 
 let citySelect = document.querySelector("#city");
-citySelect.addEventListener("change", updateCity)
+citySelect.addEventListener("change", updateCity);
